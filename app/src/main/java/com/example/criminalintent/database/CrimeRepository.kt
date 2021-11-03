@@ -3,7 +3,6 @@ package com.example.criminalintent.database
 import android.content.Context
 import androidx.lifecycle.LiveData
 import androidx.room.Room
-import com.example.criminalintent.Crime
 import java.lang.IllegalStateException
 import java.util.*
 
@@ -21,13 +20,14 @@ class CrimeRepository private constructor(context: Context){
 
     fun getAllCrimes():LiveData< List<Crime>>  = crimeDao.getAllCrimes()
 
-//    fun getCrime(id:UUID):LiveData<Crime?> {
-//
-//        crimeDao.getCrime(id)
-//    }
+    fun getCrime(id:UUID):LiveData<Crime?> {
+        return crimeDao.getCrime(id)
+    }
+
+
 
     companion object{
-        var INSTANCE:CrimeRepository? = null
+       private  var INSTANCE:CrimeRepository? = null
 
         fun initialize(context: Context){
             if (INSTANCE == null){
