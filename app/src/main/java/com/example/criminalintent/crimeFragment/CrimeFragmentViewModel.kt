@@ -24,4 +24,8 @@ class CrimeFragmentViewModel : ViewModel() {
     fun loadCrime(crimeId:UUID){
         crimeIdLiveData.value = crimeId
     }
+
+    fun saveUpdate(crime: Crime){
+        crimeRepository.updateCrime(crime)
+    }
 }

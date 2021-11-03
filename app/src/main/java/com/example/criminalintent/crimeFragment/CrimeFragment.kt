@@ -91,15 +91,23 @@ class CrimeFragment : Fragment() {
 
         fragmentViewModel.crimeLiveData.observe(
             viewLifecycleOwner, androidx.lifecycle.Observer {
-                titleEditText.setText(it?.title)
-                dateBtn.text = it?.date.toString()
-                isSolvedCheckBox.isChecked = it?.isSolved ?: false
+                it?.let {
+                   crime  = it
+                    titleEditText.setText(it.title)
+                    dateBtn.text = it.date.toString()
+                    isSolvedCheckBox.isChecked = it.isSolved
+
+                }
 
             }
         )
 
     }
 
+    override fun onStop() {
+        super.onStop()
+        fragmentViewModel.saveUpdate(crime)
+    }
 
 
 }
