@@ -12,12 +12,16 @@ import android.widget.CheckBox
 import android.widget.EditText
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.example.criminalintent.DatePickerDialogFragment
 import com.example.criminalintent.database.Crime
 import com.example.criminalintent.R
 import com.example.criminalintent.crimeListFragment.KEY_ID
 import java.util.*
 
-class CrimeFragment : Fragment() {
+const val CRIME_DATE_KEY = "crimeDate"
+
+class CrimeFragment : Fragment(),DatePickerDialogFragment.DatePickerCallback {
+
 
     private lateinit var titleEditText: EditText
     private lateinit var dateBtn:Button
@@ -40,7 +44,6 @@ class CrimeFragment : Fragment() {
         dateBtn.apply {
 
             text = crime.date.toString()
-            isEnabled = false
 
         }
 
@@ -50,6 +53,19 @@ class CrimeFragment : Fragment() {
 
     override fun onStart() {
         super.onStart()
+
+        dateBtn.setOnClickListener {
+
+            val args = Bundle()
+            args.putSerializable(CRIME_DATE_KEY,crime.date)
+
+            val datePicker = DatePickerDialogFragment()
+
+            datePicker.arguments = args
+            datePicker.setTargetFragment(this,0)
+            datePicker.show(this.parentFragmentManager,"date picker")
+        }
+
 
         val textWatcher = object : TextWatcher{
             override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
@@ -102,6 +118,13 @@ class CrimeFragment : Fragment() {
             }
         )
 
+    }
+
+
+
+    override fun onDateSelected(date: Date) {
+        crime.date = date
+        dateBtn.text = date.toString()
     }
 
     override fun onStop() {

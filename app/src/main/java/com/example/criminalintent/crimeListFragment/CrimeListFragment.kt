@@ -22,7 +22,7 @@ class CrimeListFragment : Fragment() {
 
     private lateinit var crimeRecyclerView: RecyclerView
 
-    val crimeListViewModel
+    private val crimeListViewModel
     by lazy { ViewModelProvider(this)
         .get(CrimeListViewModel::class.java) }
 
