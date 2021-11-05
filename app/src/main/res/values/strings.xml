@@ -7,5 +7,6 @@
     <string name="crime_solved_label">Solved</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="new_crime">new Crime</string>
 
 </resources>
