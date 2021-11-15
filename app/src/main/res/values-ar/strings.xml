@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">دوافع اجراميه</string>
+
+    <string name="crime_title_hint">
+        عنوان الجريمة</string>
+    <string name="crime_title_label">العنوان</string>
+    <string name="crime_details_label">التفاصيل</string>
+    <string name="crime_solved_label">اغلقت القضية</string>
+    <string name="new_crime">جريمة جديدة</string>
+    <string name="crime_suspect_text">اختر مشتبه به</string>
+    <string name="crime_report_text">ارسال تقرير</string>
+
+</resources>
