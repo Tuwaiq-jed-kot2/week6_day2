@@ -1,5 +1,6 @@
 package com.example.criminalintent.crimeFragment
 
+import android.Manifest
 import android.app.Activity
 import android.content.Intent
 import android.content.pm.PackageManager
@@ -19,6 +20,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.*
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
@@ -61,7 +63,9 @@ class CrimeFragment : Fragment(),DatePickerDialogFragment.DatePickerCallback {
 
 
 
+    private val requestPermission = registerForActivityResult(ActivityResultContracts.RequestPermission()) {
 
+    }
 
     private val getResult =
         registerForActivityResult(ActivityResultContracts.TakePicture()){
@@ -73,7 +77,21 @@ class CrimeFragment : Fragment(),DatePickerDialogFragment.DatePickerCallback {
 
         photoButton.setOnClickListener {
             // launch the cam
-            getResult.launch(photoUri)
+            when(PackageManager.PERMISSION_GRANTED) {
+                context?.let {
+                    ContextCompat.checkSelfPermission(
+                        it,
+                        Manifest.permission.CAMERA
+                    )
+                } -> {
+                    getResult.launch(photoUri)
+
+                } else -> {
+                requestPermission.launch(
+                    Manifest.permission.CAMERA
+                )
+            }
+            }
 
         }
 
