@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">犯罪意图</string>
+    <string name="crime_title_hint">Saisissez untire pour le Crime</string>
+    <string name="crime_title_label">标题</string>
+    <string name="crime_details_label">详情</string>
+    <string name="crime_solved_label">解决方案</string>
+    <string name="new_crime">新犯罪</string>
+    <string name="crime_suspect_text">Choisissez 嫌疑人</string>
+    <string name="crime_report_text">使者关系融洽</string>
+</resources>
