@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="crime_title_hint" translatable="false">输入犯罪标题</string>
+    <string name="crime_title_label" translatable="false">标题</string>
+    <string name="crime_solved_label" translatable="false">详情</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">你好空白片段</string>
+    <string name="new_crime" translatable="false">新犯罪</string>
+    <string name="crime_suspect_text" translatable="false">选择嫌疑人</string>
+    <string name="crime_report_text" translatable="false">" 发送报告"</string>
+    <string name="app_name" translatable="false">犯罪意图</string>
+    <string name="crime_details_label" translatable="false">细节</string>
+</resources>

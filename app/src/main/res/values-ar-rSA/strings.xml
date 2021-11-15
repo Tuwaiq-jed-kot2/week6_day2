@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">الدافع الاجرامي</string>
+    <string name="crime_details_label">التفاصيل </string>
+    <string name="new_crime">جريمة جديدة</string>
+    <string name="crime_report_text">ارسال التقرير</string>
+    <string name="crime_solved_label">الحلول</string>
+    <string name="crime_suspect_text">اختر المشتبه به</string>
+    <string name="crime_title_label">العنوان</string>
+    <string name="hello_blank_fragment">مرحبا قطعة فارغة </string>
+    <string name="crime_title_hint">ادخل عنوان الجريمة</string>
+</resources>
