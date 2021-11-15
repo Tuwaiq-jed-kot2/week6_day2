@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">"有罪 "</string>
+    <string name="crime_title_label">"标题,罪也。 "</string>
+    <string name="crime_details_label">"有罪细故。 "</string>
+    <string name="crime_solved_label">执之</string>
+    <string name="new_crime">"新犯罪 "</string>
+    <string name="crime_suspect_text">"嫌犯哈哈哈 "</string>
+    <string name="crime_report_text">"通书 "</string>
+    <string name="crime_report">"告今 "</string>
+    <string name="crime_report_solved">"刑事 "</string>
+    <string name="crime_report_unsolved">压</string>
+    <string name="crime_report_no_suspect">"不疑  "</string>
+    <string name="crime_report_suspect">"提交上当局 "</string>
+    <string name="crime_report_subject">"通信地址 "</string>
+    <string name="send_report">"发通书 "</string>
+    <string name="crime_title_hint">"发通书 "</string>
+</resources>

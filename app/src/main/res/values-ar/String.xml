@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">جريمه </string>
+    <string name="crime_title_hint">العنوان .</string>
+    <string name="crime_title_label">عنوان الجريمه </string>
+    <string name="crime_details_label">التفاصيل </string>
+    <string name="crime_solved_label">تم القبض</string>
+    <string name="new_crime">جريمه جديده</string>
+    <string name="crime_suspect_text">مشتبهه فيه </string>
+    <string name="crime_report_text">تبليغ </string>
+    <string name="crime_report"> ااالابلاغ الااااان !!!
+ </string>
+    <string name="crime_report_solved">مجرررررم !!!1</string>
+    <string name="crime_report_unsolved">مظلوم :( </string>
+    <string name="crime_report_no_suspect">غير مشتبهه </string>
+    <string name="crime_report_suspect">يحال للجهات العليا </string>
+    <string name="crime_report_subject">عنوان البلاغ </string>
+    <string name="send_report">ارسال البلاغ </string>
+</resources>
