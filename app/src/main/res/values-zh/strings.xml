@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="app_name"> 刑事 </string>
+    <string name="crime_title_hint">
+        犯罪 输入犯罪标题 </string>
+    <string name="crime_title_label">标题</string>
+    <string name="crime_details_label">细节</string>
+    <string name="crime_solved_label">解决</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">你好空白片段 </string>
+    <string name="new_crime"> 新犯罪 </string>
+    <string name="crime_suspect_text">挑选嫌疑人</string>
+    <string name="crime_report_text">通过电子邮件发送报告</string>
+
+</resources>
