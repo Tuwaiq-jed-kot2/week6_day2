@@ -5,6 +5,7 @@ import androidx.lifecycle.LiveData
 import androidx.room.Room
 import androidx.room.migration.Migration
 import androidx.sqlite.db.SupportSQLiteDatabase
+import java.io.File
 import java.lang.IllegalStateException
 import java.util.*
 import java.util.concurrent.Executors
@@ -24,10 +25,20 @@ class CrimeRepository private constructor(context: Context){
 
 
     private val executor = Executors.newSingleThreadExecutor()
+    private val filesDir = context.applicationContext.filesDir
 
     fun getAllCrimes():LiveData< List<Crime>>  = crimeDao.getAllCrimes()
 
+    fun getPhotoFile(crime: Crime):File = File(filesDir,crime.photoFileName)
+
+
+
+
+
     fun getCrime(id:UUID):LiveData<Crime?> {
+
+
+
         return crimeDao.getCrime(id)
     }
 
