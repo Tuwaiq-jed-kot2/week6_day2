@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">نيه المجرم</string>
+    <string name="crime_title_hint">
+        أخل عنوان الجريمة</string>
+    <string name="crime_title_label">الجريمة</string>
+    <string name="crime_details_label">التفاصيل</string>
+    <string name="crime_solved_label">حلت</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">فراقمنت فارغة</string>
+    <string name="new_crime">جريمة جديدة</string>
+    <string name="crime_suspect_text">اختار مشتبة به</string>
+    <string name="crime_report_text">ارسل تقرير</string>
+</resources>
