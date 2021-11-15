@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CriminalIntent</string>
+    <string name="crime_title_hint">
+         Entrez un titre pour le crime</string>
+    <string name="crime_title_label">Titre</string>
+    <string name="crime_details_label">Détails</string>
+    <string name="crime_solved_label">Résolu</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="new_crime">nouveau crime</string>
+    <string name="crime_suspect_text">Choisissez Suspect</string>
+    <string name="crime_report_text">Envoyer un rapport</string>
+
+
+</resources>

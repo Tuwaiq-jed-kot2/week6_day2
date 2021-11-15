@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">新犯罪</string>
+    <string name="crime_title_hint">
+        輸入犯罪標題</string>
+    <string name="crime_title_label">標題</string>
+    <string name="crime_details_label">詳</string>
+    <string name="crime_solved_label">解決</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="new_crime">新犯罪
+</string>
+    <string name="crime_suspect_text">
+選擇嫌疑人
+</string>
+    <string name="crime_report_text">
+發送報告</string>
+
+
+
+</resources>
