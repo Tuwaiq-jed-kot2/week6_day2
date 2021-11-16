@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="crime_title_label">تسمية عنوان الجريمة</string>
+    <string name="crime_details_label">تفاصيل الجريمة</string>
+    <string name="crime_solved_label">الجريمة المحلولة</string>
+</resources>

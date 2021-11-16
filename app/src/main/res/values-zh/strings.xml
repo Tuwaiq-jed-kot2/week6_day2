@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="crime_title_label">犯罪標題標籤</string>
+    <string name="crime_details_label">犯罪細節_標籤</string>
+    <string name="crime_solved_label">已解決的犯罪標籤</string>
+</resources>
